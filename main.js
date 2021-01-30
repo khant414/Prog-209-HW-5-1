@@ -1,4 +1,4 @@
-movieArray = [];
+let movieArray = [];
 
 document.addEventListener("DOMContentLoaded", function (event) {
     
