@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Form Example 1</title>
+      <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+
+<body>
+<form name = "mainForm" onsubmit="return false">
+	<fieldset id="movieInput">
+    <legend>Rate A Movie</legend>
+    <label for="movie"> Movie:</label> 
+        <input name="movie" id="movie" />
+    <label for="rating" type="text">Rating >> (1..5)</label>
+    <select id="rating" >
+        <option value="1">1 - Not Good</option>
+        <option value="2">2 - Meh</option>
+        <option value="3">3 - Good</option>
+        <option value="4">4 - Great</option>
+        <option value="5">5 - Outstanding</option>
+      </select>
+      <br><br>
+    <input type ="submit" value="Submit" onclick="StartProgram()">
+</form>
+</fieldset>
+
+<input type ="submit" value="See Movie Ratings" onclick="ShowMovieRatings()">
+<H2>Movie Ratings</H2>
+    <ul id='output'>
+    </ul>
+
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
