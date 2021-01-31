@@ -31,7 +31,7 @@ function StartProgram() {
 const showMovieRatings = () => {
     movieArray.forEach((element) => {
         let li = document.createElement("li");
-        li.innerText = `${element.title} ${element.rating}`;
+        li.innerText = element.stringify();
         let ul = document.getElementById("output");
         ul.appendChild(li);
     });
